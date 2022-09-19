@@ -122,9 +122,10 @@ ul {
 }
 
 .site-contact .link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -143,6 +144,19 @@ ul {
   color: var(--accent-color);
 }
 
+.mail-logo {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.telephone-logo {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
 /* Стилі для index.html */
 /* MAIN */
 /* hero */
@@ -242,6 +256,25 @@ ul {
   margin-left: 30px;
 }
 
+.feature-list .thumb {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+
+  background: #F5F4FA;
+  border-radius: 4px;
+}
+
+.feature-icon {
+  display: block;
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+}
+
 .feature-title {
   margin-bottom: 10px;
 
@@ -316,12 +349,35 @@ ul {
   letter-spacing: 0.03em;
 }
 
+/* client-list */
+
+.client-list {
+  display: flex;
+}
+
+.client-list>.item {
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.client-list .link {
+  
+}
+
 /* FOOTER */
 
 .footer {
   padding: 60px 0;
 
   background-color: var(--secondary-bg-color);
+}
+
+.footer>.container {
+  display: flex;
+  align-items: baseline;
 }
 
 .logo-studio {
@@ -359,6 +415,18 @@ ul {
   color: var(--accent-color);
 }
 
+.footer-media {
+  margin-left: 70px;
+}
+
+.join-in {
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: var(--primary-bg-color);
+}
 /* Стилі для сторінки Портфоліо */
 
 .list-filter {
